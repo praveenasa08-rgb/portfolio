@@ -88,12 +88,29 @@ textarea {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1.5rem;
   font-weight: 900;
   letter-spacing: -1px;
 }
 
-.logo span {
+.logo-image {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.logo-name {
+  white-space: nowrap;
+}
+
+.logo-name span {
   color: #9dbd00;
 }
 
@@ -674,7 +691,13 @@ textarea {
   }
 
   .logo {
-    font-size: 1.15rem;
+    gap: 8px;
+    font-size: 1rem;
+  }
+
+  .logo-image {
+    width: 34px;
+    height: 34px;
   }
 
   .nav-actions {
