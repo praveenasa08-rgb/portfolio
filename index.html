@@ -1,275 +1,338 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A responsive student developer portfolio">
+  <head>
     <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Header / Navigation -->
     <header class="site-header">
-        <nav class="navbar container">
-            <a href="#home" class="logo">YN<span>.</span></a>
+      <nav class="navbar container">
+        <a href="#home" class="logo">S A PRAVEENA<span>.</span></a>
 
-            <div class="nav-links" id="navLinks">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
 
-            <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" type="button"
-                        aria-label="Toggle light and dark theme">
-                    <span id="themeIcon">☾</span>
-                </button>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle light and dark theme"
+          >
+            <span id="themeIcon">☾</span>
+          </button>
 
-                <button class="menu-toggle" id="menuToggle" type="button"
-                        aria-label="Open navigation menu">
-                    ☰
-                </button>
-            </div>
-        </nav>
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Hero -->
-        <section class="hero container" id="home">
-            <div class="hero-content">
-                <p class="eyebrow">STUDENT DEVELOPER • AI/ML ENTHUSIAST</p>
-                <h1>Building useful things,<br><span>one project at a time.</span></h1>
-                <p class="hero-text">
-                    I am a student developer learning web development, programming,
-                    problem solving and AI/ML. This portfolio is a small showcase
-                    of what I am building and learning.
-                </p>
+      <!-- Hero -->
+      <section class="hero container" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">STUDENT DEVELOPER • AI/ML ENTHUSIAST</p>
+          <h1>
+            Building useful things,<br /><span>one project at a time.</span>
+          </h1>
+          <p class="hero-text">
+            I am a student developer learning web development, programming,
+            problem solving and AI/ML. This portfolio is a small showcase of
+            what I am building and learning.
+          </p>
 
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">View Projects</a>
-                    <a href="#contact" class="btn secondary-btn">Let's Connect</a>
-                </div>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary-btn">View Projects</a>
+            <a href="#contact" class="btn secondary-btn">Let's Connect</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-top">
+            <span class="status-dot"></span>
+            <span>currently learning</span>
+          </div>
+
+          <div class="code-window">
+            <p><span class="purple">const</span> developer = {</p>
+            <p class="indent">
+              name: <span class="yellow">"S A Praveena"</span>,
+            </p>
+            <p class="indent">focus: <span class="yellow">"AI + Web"</span>,</p>
+            <p class="indent">learning: <span class="yellow">true</span></p>
+            <p>};</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section container" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">01 / ABOUT</p>
+          <h2>Curious by default.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <p class="large-text">
+              I enjoy understanding how things work and then turning that
+              understanding into something practical.
+            </p>
+          </div>
+
+          <div class="about-copy">
+            <p>
+              My current focus is strengthening my programming fundamentals, web
+              development skills and problem-solving ability.
+            </p>
+            <p>
+              I am also exploring AI/ML and building small projects to learn by
+              doing rather than only watching tutorials.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section section-soft" id="skills">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">02 / SKILLS</p>
+            <h2>What I am learning.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <span class="skill-number">01</span>
+              <h3>Web Development</h3>
+              <p>
+                HTML, CSS, responsive layouts, Flexbox, Grid and JavaScript.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <span class="skill-number">02</span>
+              <h3>Programming</h3>
+              <p>Python, Java, algorithms, problem solving and clean code.</p>
+            </article>
+
+            <article class="skill-card">
+              <span class="skill-number">03</span>
+              <h3>AI / ML</h3>
+              <p>Exploring machine learning concepts, data and AI tools.</p>
+            </article>
+
+            <article class="skill-card">
+              <span class="skill-number">04</span>
+              <h3>Tools</h3>
+              <p>Git, GitHub, VS Code, Linux and developer workflows.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section container" id="projects">
+        <div class="section-heading project-heading">
+          <div>
+            <p class="eyebrow">03 / PROJECTS</p>
+            <h2>Things I have built.</h2>
+          </div>
+          <span class="project-count">03 projects</span>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured">
+            <div class="project-top">
+              <span>01</span>
+              <span>Python</span>
+            </div>
+            <h3>Student Management System</h3>
+            <p>COMING SOON.....</p>
+            <a href="#" class="project-link">View project ↗</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span>02</span>
+              <span>HTML • CSS • JS</span>
+            </div>
+            <h3>Interactive To-Do App</h3>
+            <p>COMING SOON.....</p>
+            <a href="#" class="project-link">View project ↗</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span>03</span>
+              <span>Java</span>
+            </div>
+            <h3>Number Guessing Game</h3>
+            <p>COMING SOON.....</p>
+            <a href="#" class="project-link">View project ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Learning timeline -->
+      <section class="section section-soft" id="journey">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">04 / JOURNEY</p>
+            <h2>Currently in progress.</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div>
+                <p class="timeline-label">NOW</p>
+                <h3>Strengthening fundamentals</h3>
+                <p>Programming, DSA, HTML, CSS and JavaScript.</p>
+              </div>
             </div>
 
-            <div class="hero-card">
-                <div class="card-top">
-                    <span class="status-dot"></span>
-                    <span>currently learning</span>
-                </div>
-
-                <div class="code-window">
-                    <p><span class="purple">const</span> developer = {</p>
-                    <p class="indent">name: <span class="yellow">"Your Name"</span>,</p>
-                    <p class="indent">focus: <span class="yellow">"AI + Web"</span>,</p>
-                    <p class="indent">learning: <span class="yellow">true</span></p>
-                    <p>};</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- About -->
-        <section class="section container" id="about">
-            <div class="section-heading">
-                <p class="eyebrow">01 / ABOUT</p>
-                <h2>Curious by default.</h2>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div>
+                <p class="timeline-label">NEXT</p>
+                <h3>Build bigger projects</h3>
+                <p>APIs, databases, Git workflows and full-stack projects.</p>
+              </div>
             </div>
 
-            <div class="about-grid">
-                <div>
-                    <p class="large-text">
-                        I enjoy understanding how things work and then turning that
-                        understanding into something practical.
-                    </p>
-                </div>
-
-                <div class="about-copy">
-                    <p>
-                        My current focus is strengthening my programming fundamentals,
-                        web development skills and problem-solving ability.
-                    </p>
-                    <p>
-                        I am also exploring AI/ML and building small projects to
-                        learn by doing rather than only watching tutorials.
-                    </p>
-                </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div>
+                <p class="timeline-label">FUTURE</p>
+                <h3>Explore AI/ML</h3>
+                <p>Machine learning projects and practical AI applications.</p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Skills -->
-        <section class="section section-soft" id="skills">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">02 / SKILLS</p>
-                    <h2>What I am learning.</h2>
-                </div>
+      <!-- Contact -->
+      <section class="section container" id="contact">
+        <div class="contact-box">
+          <div class="contact-text">
+            <p class="eyebrow">05 / CONTACT</p>
+            <h2>Have an idea?<br />Let's talk.</h2>
+            <p>
+              Fill in the form and the page will validate your details using
+              JavaScript.
+            </p>
+          </div>
 
-                <div class="skills-grid">
-                    <article class="skill-card">
-                        <span class="skill-number">01</span>
-                        <h3>Web Development</h3>
-                        <p>HTML, CSS, responsive layouts, Flexbox, Grid and JavaScript.</p>
-                    </article>
-
-                    <article class="skill-card">
-                        <span class="skill-number">02</span>
-                        <h3>Programming</h3>
-                        <p>Python, Java, algorithms, problem solving and clean code.</p>
-                    </article>
-
-                    <article class="skill-card">
-                        <span class="skill-number">03</span>
-                        <h3>AI / ML</h3>
-                        <p>Exploring machine learning concepts, data and AI tools.</p>
-                    </article>
-
-                    <article class="skill-card">
-                        <span class="skill-number">04</span>
-                        <h3>Tools</h3>
-                        <p>Git, GitHub, VS Code, Linux and developer workflows.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section class="section container" id="projects">
-            <div class="section-heading project-heading">
-                <div>
-                    <p class="eyebrow">03 / PROJECTS</p>
-                    <h2>Things I have built.</h2>
-                </div>
-                <span class="project-count">03 projects</span>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+              />
+              <small class="error-message" id="nameError"></small>
             </div>
 
-            <div class="projects-grid">
-                <article class="project-card featured">
-                    <div class="project-top">
-                        <span>01</span>
-                        <span>Python</span>
-                    </div>
-                    <h3>Student Management System</h3>
-                    <p>
-                        A beginner-friendly application for adding, viewing,
-                        searching and managing student records.
-                    </p>
-                    <a href="#" class="project-link">View project ↗</a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-top">
-                        <span>02</span>
-                        <span>HTML • CSS • JS</span>
-                    </div>
-                    <h3>Interactive To-Do App</h3>
-                    <p>
-                        A simple task manager demonstrating DOM manipulation,
-                        events and responsive styling.
-                    </p>
-                    <a href="#" class="project-link">View project ↗</a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-top">
-                        <span>03</span>
-                        <span>Java</span>
-                    </div>
-                    <h3>Number Guessing Game</h3>
-                    <p>
-                        A console game created to practise loops, conditions,
-                        input handling and random numbers.
-                    </p>
-                    <a href="#" class="project-link">View project ↗</a>
-                </article>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+              />
+              <small class="error-message" id="emailError"></small>
             </div>
-        </section>
 
-        <!-- Learning timeline -->
-        <section class="section section-soft" id="journey">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">04 / JOURNEY</p>
-                    <h2>Currently in progress.</h2>
-                </div>
-
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="timeline-dot"></span>
-                        <div>
-                            <p class="timeline-label">NOW</p>
-                            <h3>Strengthening fundamentals</h3>
-                            <p>Programming, DSA, HTML, CSS and JavaScript.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="timeline-dot"></span>
-                        <div>
-                            <p class="timeline-label">NEXT</p>
-                            <h3>Build bigger projects</h3>
-                            <p>APIs, databases, Git workflows and full-stack projects.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="timeline-dot"></span>
-                        <div>
-                            <p class="timeline-label">FUTURE</p>
-                            <h3>Explore AI/ML</h3>
-                            <p>Machine learning projects and practical AI applications.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me something..."
+              ></textarea>
+              <small class="error-message" id="messageError"></small>
             </div>
-        </section>
 
-        <!-- Contact -->
-        <section class="section container" id="contact">
-            <div class="contact-box">
-                <div class="contact-text">
-                    <p class="eyebrow">05 / CONTACT</p>
-                    <h2>Have an idea?<br>Let's talk.</h2>
-                    <p>
-                        Fill in the form and the page will validate your details
-                        using JavaScript.
-                    </p>
-                </div>
-
-                <form id="contactForm" class="contact-form" novalidate>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name"
-                               placeholder="Your name">
-                        <small class="error-message" id="nameError"></small>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email"
-                               placeholder="you@example.com">
-                        <small class="error-message" id="emailError"></small>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5"
-                                  placeholder="Tell me something..."></textarea>
-                        <small class="error-message" id="messageError"></small>
-                    </div>
-
-                    <button type="submit" class="btn primary-btn">Send Message</button>
-                    <p id="successMessage" class="success-message"></p>
-                </form>
-            </div>
-        </section>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+            <p id="successMessage" class="success-message"></p>
+          </form>
+        </div>
+      </section>
     </main>
+    <div class="social-links">
+      <a
+        href="https://github.com/praveenasa08-rgb"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link"
+      >
+        <span class="social-icon">GH</span>
+
+        <span>
+          <strong>GitHub</strong>
+          <small>@praveenasa08-rgb</small>
+        </span>
+
+        <span class="social-arrow">↗</span>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/praveena-s-a-35594b3b8/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link"
+      >
+        <span class="social-icon">in</span>
+
+        <span>
+          <strong>LinkedIn</strong>
+          <small>Connect with me</small>
+        </span>
+
+        <span class="social-arrow">↗</span>
+      </a>
+
+      <a
+        href="https://www.instagram.com/praveena_s_a_08/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link"
+      >
+        <span class="social-icon">IG</span>
+
+        <span>
+          <strong>Instagram</strong>
+          <small>@praveena_s_a_08</small>
+        </span>
+
+        <span class="social-arrow">↗</span>
+      </a>
+    </div>
 
     <footer class="footer">
-        <p>© 2026 Your Name. Built with HTML, CSS & JavaScript.</p>
+      <p>© 2026 S A PRAVEENA. Built with HTML, CSS & JavaScript.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
